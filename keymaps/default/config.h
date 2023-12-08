@@ -25,8 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
-#define SPLIT_USB_DETECT
-#define TAPPING_FORCE_HOLD
+
+#define QUICK_TAP_TERM 0
 #define TAPPING_TERM 100
 
 #undef RGBLED_NUM
@@ -35,11 +35,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 #define RGBLIGHT_EFFECT_SNAKE
 #define RGBLIGHT_EFFECT_KNIGHT
-//#define RGBLIGHT_EFFECT_CHRISTMAS
+#define RGBLIGHT_EFFECT_CHRISTMAS
 #define RGBLIGHT_EFFECT_STATIC_GRADIENT
-//#define RGBLIGHT_EFFECT_RGB_TEST
+#define RGBLIGHT_EFFECT_RGB_TEST
 #define RGBLIGHT_EFFECT_ALTERNATING
-//#define RGBLIGHT_EFFECT_TWINKLE
+#define RGBLIGHT_EFFECT_TWINKLE
 #define RGBLED_NUM 27
 #define RGBLIGHT_LIMIT_VAL 120
 #define RGBLIGHT_HUE_STEP 10
@@ -47,7 +47,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_VAL_STEP 17
 
 // Underglow
+/*
 #undef RGBLED_NUM
 #define RGBLED_NUM 14    // Number of LEDs
-#define RGBLED_SPLIT { 6, 6 }
-//#define RGBLIGHT_SLEEP
+#define RGBLIGHT_SLEEP
+*/
