@@ -51,14 +51,29 @@ qmk flash -kb lily58 -km fmash
 Here we are flashing the fmash keymap, the default keymap does not have the
 encoder functions set up. In order to edit or make your own keymap, you can
 copy the fmash keymap, remap it to your name and work in there. The keymaps are
-located in the ```qmk_firmware/keyboards/lily58/keymaps``` folder. So to make
-your own, you can run the following in order
+located in the ```~/qmk_firmware/keyboards/lily58/keymaps``` folder. 
+So to make your own, you can run the following in order
 
 ```sh
-cp -rv qmk_firmware/keyboards/lily58/keymaps/fmash qmk_firmware/keyboards/lily58/keymaps/{Your Name}
-cd qmk_firmware/keyboards/lily58/keymaps/{Your Name}
+cp -rv ~/qmk_firmware/keyboards/lily58/keymaps/fmash ~/qmk_firmware/keyboards/lily58/keymaps/{Your Name}
+cd ~/qmk_firmware/keyboards/lily58/keymaps/{Your Name}
 ```
 
 There, you can edit the keymap.c file to change your keymap and encoder
-functions to your liking. Please head over to the qmk docs to get a guide on
-the configuration options.
+functions to your liking using notepad or any editor of your choice. 
+To open with notepad:
+
+```sh
+notepad.exe keymap.c
+```
+
+Please head over to the qmk docs to get a guide on the configuration options.
+
+
+If your are not comfortable in terminal, you can also navigate to your home folder on
+windows e.g. ```C:/Users/username/```, The qmk_firmware folder is located there.
+From there you can navigate to ```qmk_firmware/keyboards/lily58/keymaps``` to
+find different keymaps. To make your own, create a folder in your own name and
+copy the contents of the folder ```fmash``` into the new folder. There you can
+edit the keymap.c file to change the keymap. The keycodes can be found at [qmk
+docs](https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md)
