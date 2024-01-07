@@ -16,6 +16,26 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 # With encoder and underglow rgb
 
+## macOS
+
+- Install [Homebrew](https://brew.sh/)
+- Install `qmk` with Homebrew
+
+```sh
+brew install qmk/qmk/qmk
+```
+- Clone `qmk_firmware` with submodules
+
+```sh
+git clone --recurse-submodules git@github.com:qmk/qmk_firmware.git
+```
+
+> Not cloning manually might result in error
+
+- Run `qmk setup` to install the necessary dependencies
+
+Now simply flash your profile with `qmk flash -kb lily58 -km <profile-name>`
+
 ## Windows
 
 Install and setup QMK MSYS on your computer. After opening up the QMK MSYS
